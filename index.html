@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FREE ROBUX GENERATOR 💰</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #111, #25002e);
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.box {
+  width: 100%;
+  max-width: 430px;
+  background: #181818;
+  border: 2px solid #ff2cff;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 0 30px #ff00ff;
+}
+
+h1 {
+  color: #00ff88;
+  text-shadow: 0 0 12px #00ff88;
+}
+
+input, select {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  background: #292929;
+  color: white;
+  font-size: 16px;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #00ff88;
+  font-weight: bold;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.03);
+}
+
+.progressBox {
+  display: none;
+  margin-top: 20px;
+}
+
+.bar {
+  width: 100%;
+  height: 20px;
+  background: #333;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress {
+  width: 0%;
+  height: 100%;
+  background: #00ff88;
+}
+
+#status {
+  margin: 15px 0;
+  color: #aaa;
+}
+
+#result {
+  display: none;
+  margin-top: 20px;
+  color: #ff4444;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.small {
+  color: #777;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.dad {
+  margin-top: 18px;
+  color: #ff2cff;
+  font-size: 13px;
+  font-weight: bold;
+  text-shadow: 0 0 8px #ff00ff;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+
+<h1>💰 FREE ROBUX</h1>
+
+<p>Robux Generator v6.9</p>
+
+<input id="username" placeholder="Enter Roblox username">
+
+<select id="amount">
+  <option>100 Robux</option>
+  <option>500 Robux</option>
+  <option>1000 Robux</option>
+  <option>5000 Robux</option>
+  <option>10000 Robux</option>
+</select>
+
+<button onclick="generate()">GENERATE ROBUX 🚀</button>
+
+<div class="progressBox" id="progressBox">
+
+  <p id="status">Initializing...</p>
+
+  <div class="bar">
+    <div class="progress" id="progress"></div>
+  </div>
+
+</div>
+
+<div id="result">
+  💀 PRANKED! 💀
+  <br><br>
+  BRO REALLY THOUGHT IT WAS FREE 😭
+</div>
+
+<div class="small">
+  Demo/prank website — no real Robux are generated.
+</div>
+
+<div class="dad">
+  Made by Rahat's dad 💀
+</div>
+
+</div>
+
+<script>
+
+function generate() {
+
+  const username = document.getElementById("username").value;
+  const progressBox = document.getElementById("progressBox");
+  const progress = document.getElementById("progress");
+  const status = document.getElementById("status");
+  const result = document.getElementById("result");
+
+  if (username.trim() === "") {
+    alert("Enter a username first 💀");
+    return;
+  }
+
+  progressBox.style.display = "block";
+  result.style.display = "none";
+
+  let percent = 0;
+
+  const messages = [
+    "Connecting to Roblox...",
+    "Finding account...",
+    "Checking Robux balance...",
+    "Generating Robux...",
+    "Bypassing the economy 💀",
+    "Almost done...",
+    "Sending Robux..."
+  ];
+
+  let i = 0;
+
+  const interval = setInterval(() => {
+
+    percent += 10;
+
+    progress.style.width = percent + "%";
+
+    if (i < messages.length) {
+      status.innerText = messages[i];
+      i++;
+    }
+
+    if (percent >= 100) {
+
+      clearInterval(interval);
+
+      setTimeout(() => {
+
+        status.innerText = "Transfer failed 💀";
+        result.style.display = "block";
+
+      }, 700);
+    }
+
+  }, 500);
+}
+
+</script>
+
+</body>
+</html>
